@@ -1,0 +1,8 @@
+stages:
+  train_model:
+    cmd: python train.ipynb
+    deps:
+    - train.ipynb
+    - user_behavior_dataset.csv
+    outs:
+    - random_forest_model.joblib
