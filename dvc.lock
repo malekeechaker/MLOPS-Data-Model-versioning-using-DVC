@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python train.py
+    deps:
+    - path: train.py
+      hash: md5
+      md5: 02e6484450892d57247968e9c13b44be
+      size: 2095
+    - path: user_behavior_dataset.csv
+      hash: md5
+      md5: 7f16fab1861e3ebcd634585ae0a33b7f
+      size: 38878
+    outs:
+    - path: random_forest_model.joblib
+      hash: md5
+      md5: 94fbe6d9a4ad5fb62deba3f740531d72
+      size: 154801
